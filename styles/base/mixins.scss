@@ -1,0 +1,26 @@
+@mixin wrapper {
+    max-width: 74%;
+    margin: 0 auto;
+}
+@mixin flex {
+    display: flex;
+}
+@mixin clearfix {
+    content: "";
+    display: table;
+    clear: both;
+}
+@mixin shadow {
+    box-shadow: 3px 9px 19px -7px rgba(0,0,0, .6);
+}
+@mixin border-radius ($radius: 3px){
+    border-radius: $radius;
+}
+@mixin beautyText {
+    text-rendering: optimizeLegibility;
+}
+@mixin textHeading {
+    font-size: normal;
+    font-weight: 400;
+    line-height: 1;
+}

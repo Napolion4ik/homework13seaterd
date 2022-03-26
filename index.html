@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seatrade</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" integrity="sha512-ZKX+BvQihRJPA8CROKBhDNvoc2aDMOdAlcm7TUQY+35XYtrd3yh95QOOhsPDQY9QnKE0Wqag9y38OIgEvb88cA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="top">
+            <div class="wrapper">
+                <div class="top-wrap">
+                    <div class="header__logo">
+                        <img src="img/logos.png" alt="SEATRADE">
+                    </div>
+                    <nav class="header__nav">
+                        <div class="menu-button">
+                            &#9776
+                        </div>
+                        <ul class="menu">
+                            <li class="menu__item">
+                                <a href="#" class="menu__link">
+                                    Главная
+                                </a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="pages/about.html" class="menu__link">
+                                    О компании
+                                </a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="pages/services.html" class="menu__link">
+                                    Услуги
+                                </a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="pages/gallery.html" class="menu__link">
+                                    Галерея
+                                </a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="pages/contacts.html" class="menu__link">
+                                    Контакты
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="header__caption">
+            <div class="wrapper">
+                <h1 class="header__caption-title">
+                    Seatrade LLC
+                </h1>
+                <input value="Морская техника и оборудование судов " type="search" name="site-search" class="header__caption-description"></input>
+            </div>
+        </div>
+    </header>
+    <section class="block__about">
+        <div class="wrapper">
+            <div class="tabs">
+                <input class="tabs__input" type="radio" name="tab" id="tab-1">
+                <label class="tabs__label" for="tab-1">
+                    <img src="img/ukraine.png" alt="UA">
+                    <span class="tabs__language">
+                        UA
+                    </span>
+                </label>
+                <input class="tabs__input" type="radio" name="tab" id="tab-2" checked>
+                <label class="tabs__label" for="tab-2">
+                    <img src="img/russia.png" alt="RU">
+                    <span class="tabs__language">
+                        RU
+                    </span>
+                </label>
+                <input class="tabs__input" type="radio" name="tab" id="tab-3">
+                <label class="tabs__label" for="tab-3">
+                    <img src="img/united-kingdom.png" alt="UK">
+                    <span class="tabs__language">
+                        UK
+                    </span>
+                </label>
+                <input class="tabs__input" type="radio" name="tab" id="tab-4">
+                <label class="tabs__label" for="tab-4">
+                    <img src="img/croatia.png" alt="HR">
+                    <span class="tabs__language">
+                        HR
+                    </span>
+                </label>
+                <div class="about">
+                    <article class="about__language--native about__ua tab-1">
+                        <h2 class="about__title">
+                            О нас
+                        </h2>
+                        <p class="about__text">
+                            <img src="img/cruise.png" alt="cruise">
+                            <span>
+                                Компанія SEATRADE ООО
+                            </span> 
+                            - була заснована в 1989 році як Асоціація інженерного та судового обладнення . Наші послуги включають в себе :
+                        </p>
+                        <ul class="about_list">
+                            <li class="about__item"><i class="fa-solid fa-dharmachakra"></i>Поставка оригінальних запасних частин для короблів</li>
+                            <li class="about__item"><i class="fa-solid fa-gear"></i>Ми пропонуємо ...</li>
+                            <li class="about__item"><i class="fa-solid fa-gear"></i>24 часове обслуговування</li>
+                            <li class="about__item"><i class="fa-solid fa-gear"></i>Поставка оригінальних запасних частин для короблів</li>
+                            <li class="about__item"><i class="fa-solid fa-dharmachakra"></i>Поставка оригінальних запасних частин для короблів</li>
+                        </ul>
+                    </article>
+                    <article class="about__language--secondary about__ru tab-2">
+                        <h2 class="about__title">
+                            О нашей компании</h2>
+                        <p class="about__text">
+                            <img src="img/cruise.png" alt="cruise">
+                            <span>
+                                Компания SEATRADE ООО
+                            </span> 
+                            - была основана в 1989 году как Асоциация инженерного и судового оборудования. Наши услуги включают в себя :
+                        </p>
+                        <ul class="about_list">
+                            <li class="about__item"><i class="fa-solid fa-dharmachakra"></i>Наша поставка</li>
+                            <li class="about__item"><i class="fa-solid fa-gear"></i>Ми предлагаем ...</li>
+                            <li class="about__item"><i class="fa-solid fa-gear"></i>Наша поставка</li>
+                            <li class="about__item"><i class="fa-solid fa-gear"></i>Наша поставка</li>
+                            <li class="about__item"><i class="fa-solid fa-dharmachakra"></i>Наша поставка</li>
+                        </ul>
+                    </article>
+                    <article class="about__language--primary about__uk tab-3">
+                        <h2 class="about__title">
+                            About us
+                        </h2>
+                        <p class="about__text">
+                            <img src="img/cruise.png" alt="cruise">
+                            <span>
+                                Company SEATRADE ООО
+                            </span> 
+                            - was founded in 1989 as an association for ship engineering and ship eqiuipment. Our services include:
+                        </p>
+                        <ul class="about_list">
+                            <li class="about__item"><i class="fa-solid fa-dharmachakra"></i>Delivering ...</li>
+                            <li class="about__item"><i class="fa-solid fa-gear"></i>We offer ...</li>
+                            <li class="about__item"><i class="fa-solid fa-gear"></i>24 hour parts service and support ...</li>
+                            <li class="about__item"><i class="fa-solid fa-gear"></i>Winder storage of your river ships ...</li>
+                            <li class="about__item"><i class="fa-solid fa-dharmachakra"></i>We are your safety and reliablity on sea ...</li>
+                        </ul>
+                    </article>
+                    <article class="about__language--main about__hr tab-4">
+                        <h2 class="about__title">
+                            HR - About us
+                        </h2>
+                        <p class="about__text">
+                            <img src="img/cruise.png" alt="cruise">
+                            <span>
+                                Tvrtka SEATRADE OOO
+                            </span> 
+                            - osnovana je 1989. godine kao udruga za brodostrojarenje i brodsku opremu. Naše usluge uključuju:
+                        </p>
+                        <ul class="about_list">
+                            <li class="about__item"><i class="fa-solid fa-dharmachakra"></i>Postavka originalnih rezervnih dijelova za kutije</li>
+                            <li class="about__item"><i class="fa-solid fa-gear"></i>We offer .</li>
+                            <li class="about__item"><i class="fa-solid fa-gear"></i>24-satni servis i podrška za dijelove.</li>
+                            <li class="about__item"><i class="fa-solid fa-gear"></i>Winder skladište vaših riječnih brodova.</li>
+                            <li class="about__item"><i class="fa-solid fa-dharmachakra"></i>HR - Mi smo vaša sigurnost i pouzdanost na moru.</li>
+                        </ul>
+                    </article>
+                    
+                </div>
+            </div>
+        </div>
+    </section> 
+    <section class="block__gallery-photo">
+        <div class="wrapper">
+            <div class="gallery-photo">
+                <div class="gallery-photo__title-wrap text-section">
+                    <h2 class="title gallery-photo__title">
+                        Услуги 
+                    </h2>
+                    <p class="gallery-photo__description description">
+                        Наша специализация 
+                    </p>
+                </div>
+            </div>
+            <div class="photo">
+                <a class="photo__link" href="img/1big.jpg" data-lightbox="gallery1" data-title="речной транспорт">
+                    <img src="img/1.jpg" alt="речной транспорт">
+                </a>
+                <a class="photo__link" href="img/2big.jpg" data-lightbox="gallery1" data-title="Гидро">
+                    <img src="img/2.jpg" alt="Гидро">
+                </a>
+                <a class="photo__link" href="img/3big.jpg" data-lightbox="gallery1" data-title="Судостроение и Верфи">
+                    <img src="img/3.jpg" alt="Судостроение и Верфи">
+                </a>
+                <a class="photo__link" href="img/1big.jpg" data-lightbox="gallery1" data-title="Проектирование и консалтинг">
+                    <img src="img/1.jpg" alt="Проектирование и консалтинг">
+                </a>
+                <a class="photo__link" href="img/2big.jpg" data-lightbox="gallery1" data-title="Внешняя торговля и другие услуги">
+                    <img src="img/2.jpg" alt="Внешняя торговля и другие услуги">
+                </a>
+                <a class="photo__link" href="img/3big.jpg" data-lightbox="gallery1" data-title="Обслужевание и ремонт двигателей">
+                    <img src="img/3.jpg" alt="Обслужевание и ремонт двигателей">
+                </a>
+            </div>
+            <div class="pick-photo">
+                <a href="img/1big.jpg" data-lightbox="gallery1" class="pick-photo-link">Речной транспорт</a>
+                <a href="img/2big.jpg" data-lightbox="gallery1" class="pick-photo-link">Гидро</a>
+                <a href="img/3big.jpg" data-lightbox="gallery1" class="pick-photo-link">Судостроение и Верфи</a>
+                <a href="img/1big.jpg" data-lightbox="gallery1" class="pick-photo-link">Проектирование и консалтинг</a>
+                <a href="img/2big.jpg" data-lightbox="gallery1" class="pick-photo-link">Внешняя торговля и другие услуги</a>
+                <a href="img/3big.jpg" data-lightbox="gallery1" class="pick-photo-link">Обслужевание и ремонт двигателей</a>
+            </div>
+        </div>
+    </section>
+    <section class="difference-section" >
+        <div class="wrapper">
+            <div class="difference">
+                <h2 class="title difference__title">
+                    Что отличает нас
+                </h2>
+                <div class="difference__inner">
+                    <img class="difference__img" src="img/1big.jpg" alt="Речной транспорт">
+                    <div class="difference-inner__desc">
+                        <p class="difference-inner__text difference-inner__text--paraghraf">
+                            Компания следит за мировыми тенденциями в развитии проектирования и производства судового оборудования и судовых двигателей и их реализации в найболее современный способ на практике.
+                        </p>
+                        <p class="difference-inner__text  difference-inner__text--paraghraf">
+                            Компетентность и эффективность персонала при выполнении самых сложных технических задач и специализированные задачи в области морской техники.
+                        </p>
+                        <p class="difference-inner__text  difference-inner__text--paraghraf">
+                            Гибкость на рынке и изумительная ловкость, предлагая высокие качество решения по доступным ценам.
+                        </p>
+                        <p class="difference-inner__text difference-inner__text--paraghraf">
+                            Имеем справедливое и честное отношения к пользователям услуг. 
+                        </p>
+                    </div>
+                </div>
+                <h2 class="title difference__title">
+                    Пользователями продуктов и услуг являются: 
+                </h2>
+                <div class="difference__inner">
+                    <div class="difference-inner__desc difference-inner__desc--left">
+                        <p class="difference-inner__text">
+                            <i class="fa-solid fa-ship"></i>
+                            Судостроение и судоремонт двор к морю на обеих реках.
+                        </p>
+                        <p class="difference-inner__text">
+                            <i class="fa-solid fa-ship"></i>
+                            Морские мореходное
+                        </p>
+                        <p class="difference-inner__text">
+                            <i class="fa-solid fa-ship"></i>
+                            Грузоотправители и грузоприемы 
+                        </p>
+                        <p class="difference-inner__text">
+                            <i class="fa-solid fa-ship"></i>
+                            Производители и дистрибьюторы электроэнегрии
+                        </p>
+                        <p class="difference-inner__text">
+                            <i class="fa-solid fa-ship"></i>
+                            Перевозчики край рек и озер 
+                        </p>
+                        <p class="difference-inner__text">
+                            <i class="fa-solid fa-ship"></i>
+                            Производители и переработчики нефти и нефтепродуктов
+                        </p>
+                        <p class="difference-inner__text">
+                            <i class="fa-solid fa-ship"></i>
+                            Железнодорожный  транспорт компании
+                        </p>
+                        <p class="difference-inner__text">
+                            <i class="fa-solid fa-ship"></i>
+                            Пользователям строительной техники
+                        </p>
+                    </div>
+                    <img class="difference__img" src="img/1big.jpg" alt="Речной транспорт">
+                </div>
+            </div>
+            <div class="quote">
+                <div class="quote__inner">
+                    <blockquote class="quote__text">
+                        <i class="fa-solid fa-bookmark"></i> 
+                        "Морской болезнью болеют те, кто не привык терять под ногами почву."
+                    </blockquote>
+                    <cite>- Леонид Сухоруков</cite>
+                </div>
+                <div class="quote__picture">
+                    <img class="quote__picture-img" src="img/3.jpg" alt="Гидро">
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="wrapper">
+            <div class="footer__top">
+                <div class="footer__contacts">
+                    <p class="footer__logo">
+                        SEATRADE LLC
+                    </p>
+                    <a class="footer__contacts-link" href="tel:+38523235903">
+                        Pione: +385 23 235 903
+                    </a>
+                    <a class="footer__contacts-link" href="tel:+38523235903">
+                        GSM: +385 91 503 1821
+                    </a>
+                    <a class="footer__contacts-link" href="email:sea_engineering@outlook.com">
+                        e-mail: sea_engineering@outlook.com
+                    </a>
+                </div>
+                <div class="footer__addres">
+                    <p class="footer__text">
+                        911 Central Avanue #101
+                    </p>
+                    <p class="footer__text footer__text-pb ">
+                        ALBANY,NEW YORK 12206
+                    </p>
+                    <p class="footer__text footer__text-pt">
+                        Branah Office
+                    </p>
+                    <p class="footer__text">
+                        23000 ZADAR CROTIA
+                    </p>
+                </div>
+                <div class="footer__community">
+                    <a href="" class="footer__link">
+                        <i class="fa-brands fa-facebook-square"></i>
+                    </a>
+                    <a href="" class="footer__link">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p class="footer__desc">
+                    @SEATRADE 2017
+                </p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox-plus-jquery.min.js" integrity="sha512-6gudNVbNM/cVsLUMOb8g2b/RBqtQJ3aDfRFgU+5paeaCTtbYY/Dg00MzZq7r6RvJGI2KKtPBhjkHGTL/iOe21A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js" integrity="sha512-yFjZbTYRCJodnuyGlsKamNE/LlEaEAxSUDe5+u61mV8zzqJVFOH7TnULE2/PP/l5vKWpUNnF4VGVkXh3MjgLsg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

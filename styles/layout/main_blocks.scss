@@ -1,0 +1,241 @@
+@import '../base/variables';
+@import '../base/mixins';
+
+.block__about {
+    font-size: 1rem;
+    line-height: 1.2rem;
+    background: url('../../img/cartoon-ship-vector-clipart.png') no-repeat fixed center center;
+    padding-bottom: 1%;
+    .tabs {
+        width: 90%;
+        margin: 0 auto;
+        @include clearfix;
+        .about__title {
+            margin-top: 2%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 0.5%;
+            border-bottom: 3px solid gray;
+        }
+        .about__text {
+            padding: 1%;
+            background-color: $secondarybacground-light;
+            @include shadow;
+            margin: 1.5% 0 ;
+        }
+        .about__item {
+            display: flex;
+            gap: 0.5%;
+        }
+        .about__item + .about__item {
+            margin-top: 1%;
+        }
+    }
+    .tabs__label {
+        cursor: pointer;
+        float: left;
+        display: block;
+        padding: 2% 5%;
+        background-color: $background-mid;
+        border-radius: 40px 40px 0 0;
+    }
+    .tabs input {
+        display: none;
+    }
+    .tabs__input:checked + label {
+        background-color: $background-light;
+        color: $primary-light;
+    }
+    .tabs article {
+        width: 98%;
+        display: none;
+        border-top: 8px solid $background-light;
+    }
+    .tabs input[id="tab-1"]:checked~.about .tab-1,
+    .tabs input[id="tab-2"]:checked~.about .tab-2,
+    .tabs input[id="tab-3"]:checked~.about .tab-3,
+    .tabs input[id="tab-4"]:checked~.about .tab-4 {
+        display: block;
+    }
+    .tabs .about {
+        clear: both;
+    }
+}
+
+.block__gallery-photo {
+    line-height: 1.2rem;
+    text-align: center;
+    background-color: $primary-mid;
+    padding: 1.5% 0;
+    .gallery-photo__title-wrap {
+        color: #fff;
+        .gallery-photo__description {
+            margin-top: 0.5%;
+        }
+    }
+    .photo {
+        width: 90%;
+        margin:  3% auto;
+        @include flex();
+        justify-content: space-around;
+        flex-wrap: wrap;
+        &__link:nth-child(4), 
+        &__link:nth-child(5), 
+        &__link:nth-child(6), {
+            margin-top: 2%;
+        }
+    }
+}
+
+.pick-photo {
+    display: flex;
+    flex-direction: column;
+    &-link {
+        text-decoration: none;
+        width: 50%;
+        margin: 0 auto;
+        padding: 1.2% 0%;
+        background-color: $primary-mid;
+        color: $secondary-light;
+        @include shadow;
+        border: 1px solid #1c4868;
+        position: relative;
+        &::before,
+        &::after {
+            content:'';
+            position: absolute;
+            top: 0;
+            width: 0;
+            height: 100%;
+            background: rgba(255,255,255,0.3);
+            transition: all 2s ease;
+        }
+        &::after {
+            right: 0;
+        }
+        &::before {
+            left: 0;
+        }
+        &:hover::before,
+        &:hover::after {
+            width: 50%;
+        }
+    }
+}
+
+.difference-section {
+    padding-top: 1.5%;
+    .difference {
+    text-align: center;
+    &__inner {
+        margin: 2% 0;
+        display: flex;
+        gap: 1%;
+        .difference-inner__desc {
+            text-align: left;
+            width: 50%;
+            &--left {
+                text-align: left;
+            }
+            .difference-inner__text + .difference-inner__text {
+                margin-top: 4%;
+            }
+            .difference-inner__text--paraghraf::first-letter {
+                margin-left: 4%;
+            }
+        }
+    }
+    &__img {
+        max-width: 50%;
+        height: auto;
+        }
+    }
+}
+
+.quote {
+    margin-top: 5%;
+    font-size: 1.2rem;
+    &__inner {
+        width: 50%;
+        margin-left: auto;
+        border-left: 10px solid rgba(223, 156, 108, 0.815);
+        padding: 1% ;
+        font-style: italic;
+        .quote__text {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1%;
+            gap: 2%;
+        }
+        .fa-bookmark {
+            font-size: 2rem;
+        }
+    }
+    &__picture {
+        opacity: 0.3;
+        &-img {
+            max-width: 50%;
+        }
+    }
+}
+
+@media (max-width:950px) {
+    .difference-section {
+        .difference {
+        &__inner {
+            margin: 2% 0;
+            display: flex;
+            gap: 1%;
+            flex-wrap: wrap;
+            justify-content: center;
+            .difference__img {
+                margin: 2% 0;
+                }
+            }
+        }
+    }
+    .title {
+        font-size: 1.4rem;
+    }
+    .difference-inner__text {
+        font-size: 0.8rem;
+    }
+    .about__title {
+        margin-top: 2%;
+        margin-bottom: 2%;
+        padding-bottom: 2%;
+        font-size: 1rem;
+    }
+    .header .header__caption-description {
+        font-size: 0.8rem;
+    }
+    .pick-photo-link {
+        font-size: 0.6rem;
+    }
+    .difference-inner__text {
+        font-size: 1rem ;
+    }
+    .quote__text {
+        font-size: 1rem;
+    }
+    .quote__inner cite {
+        font-size: 0.9rem;
+    }
+    .quote__inner {
+        width: 100%;
+    }
+    .quote__picture {
+        display: flex;
+        justify-content: center;
+    }
+    .block__about {
+        padding-bottom: 2%;
+        padding-top: 3%;
+    }
+    .about__item {
+        font-size: 0.9rem;
+    }
+    
+}
+

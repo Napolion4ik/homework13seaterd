@@ -1,0 +1,152 @@
+/* VARIABLES */
+.header {
+  background: url("../../img/ship-main1.jpg") no-repeat scroll center center;
+  background-size: cover; }
+  .header .top {
+    -webkit-box-shadow: 3px 9px 19px -7px rgba(0, 0, 0, 0.6);
+            box-shadow: 3px 9px 19px -7px rgba(0, 0, 0, 0.6);
+    padding: 3% 0;
+    background: rgba(57, 58, 66, 0.8); }
+    .header .top .top-wrap {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      height: auto; }
+      .header .top .top-wrap img {
+        max-width: 30%;
+        min-width: 250px;
+        height: auto; }
+    .header .top .header__nav .menu-button {
+      width: 48px;
+      height: 48px;
+      line-height: 48px;
+      font-size: 1.2rem;
+      background: -webkit-gradient(linear, left top, left bottom, from(white), to(lightgray));
+      background: linear-gradient(white, lightgray);
+      text-align: center;
+      cursor: pointer;
+      border-radius: 5%; }
+    .header .top .header__nav .menu {
+      white-space: nowrap; }
+      .header .top .header__nav .menu .menu__link {
+        font-size: 1rem;
+        color: #fff;
+        text-align: center;
+        line-height: 1.4rem;
+        text-decoration: none;
+        -webkit-transition: all 0.4s linear;
+        transition: all 0.4s linear; }
+        .header .top .header__nav .menu .menu__link:hover {
+          color: #c53c3c; }
+  .header .header__caption {
+    z-index: 10;
+    color: #e1f5ff;
+    padding: 7% 0; }
+    .header .header__caption-title {
+      -webkit-box-shadow: 3px 9px 19px -7px rgba(0, 0, 0, 0.6);
+              box-shadow: 3px 9px 19px -7px rgba(0, 0, 0, 0.6);
+      line-height: 1.4;
+      margin-bottom: 0;
+      padding: 0 5%;
+      text-transform: uppercase;
+      font-style: italic;
+      font-weight: bold;
+      color: #245e88;
+      text-shadow: 4px 1px 1px rgba(255, 181, 35, 0.9); }
+    .header .header__caption-description {
+      -webkit-box-shadow: 3px 9px 19px -7px rgba(0, 0, 0, 0.6);
+              box-shadow: 3px 9px 19px -7px rgba(0, 0, 0, 0.6);
+      border-radius: 3px;
+      background-color: rgba(225, 245, 254, 0.7);
+      color: #272727;
+      text-shadow: none;
+      padding: 2% 1.5%;
+      font-size: 1.2rem;
+      line-height: 1.2rem;
+      width: 100%;
+      outline: none; }
+
+.show {
+  display: block; }
+
+.bg1 {
+  background: url(../../img/ship-main1.jpg) no-repeat scroll center center;
+  -webkit-transition: 2s background;
+  transition: 2s background;
+  background-size: cover; }
+
+.bg2 {
+  background: url(../../img/ship-main2.jpg) no-repeat scroll center center;
+  -webkit-transition: 2s background;
+  transition: 2s background;
+  background-size: cover; }
+
+.bg3 {
+  background: url(../../img/ship-main3.jpg) no-repeat scroll center center;
+  -webkit-transition: 2s background;
+  transition: 2s background;
+  background-size: cover; }
+
+@media (max-width: 949px) {
+  .header__nav {
+    position: relative; }
+    .header__nav .menu.active {
+      -webkit-transform: translateX(0);
+              transform: translateX(0); }
+    .header__nav .menu {
+      position: fixed;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      width: 50%;
+      top: 0%;
+      left: 0%;
+      background-color: rgba(57, 58, 66, 0.8);
+      border-radius: 0 0 10% 0;
+      -webkit-transform: translateX(-100%);
+              transform: translateX(-100%);
+      -webkit-transition: -webkit-transform 0.8s ease-in-out;
+      transition: -webkit-transform 0.8s ease-in-out;
+      transition: transform 0.8s ease-in-out;
+      transition: transform 0.8s ease-in-out, -webkit-transform 0.8s ease-in-out; }
+      .header__nav .menu .menu__item {
+        padding: 5% 5%;
+        width: 100%; }
+      .header__nav .menu .menu__link {
+        padding: 5% 5%;
+        font-size: 3rem; }
+    .header__nav .menu-button {
+      display: block;
+      position: absolute;
+      right: 0;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+              transform: translateY(-50%); } }
+@media (min-width: 950px) {
+  .header__nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .header__nav .menu {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: end;
+          -ms-flex-pack: end;
+              justify-content: flex-end;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      white-space: nowrap; }
+      .header__nav .menu .menu__item {
+        padding: 0 4%; }
+      .header__nav .menu__link {
+        font-size: calc((1vw + 1vh) * 0.8); }
+    .header__nav .menu-button {
+      display: none; } }
+
+/*# sourceMappingURL=header.css.map */

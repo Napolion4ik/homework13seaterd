@@ -1,0 +1,27 @@
+/* VARIABLES */
+body {
+  text-rendering: optimizeLegibility;
+  font-size: normal;
+  font-weight: 400;
+  line-height: 1;
+  font-family: 'Open sans', sans-serif;
+  background: #e1f5ff;
+  color: #161616; }
+
+.wrapper {
+  max-width: 74%;
+  margin: 0 auto; }
+
+h1 {
+  font-size: 2.8rem; }
+
+h2 {
+  font-size: 2rem; }
+
+h3 {
+  font-size: 1.5rem; }
+
+h4, h5, h6 {
+  font-size: 1.3rem; }
+
+/*# sourceMappingURL=base.css.map */
